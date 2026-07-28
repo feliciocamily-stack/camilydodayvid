@@ -2,7 +2,7 @@
 const botao = document.getElementById('meuBotao');
 const corpoPagina = document.body;
 
-// 2. Função para gerar uma cor hexadecimal aleatória (ex: #FFA07A)
+// 2. Função para gerar uma cor hexadecimal aleatória (ex: #08c1f4)
 function gerarCorAleatoria() {
     const letras = '0123456789ABCDEF';
     let cor = '#';
