@@ -3,13 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Futebol Feminino: História, Ícones e Paixão</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://unsplash.com') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        header p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        nav {
+            background-color: #113327;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00ffaa;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #00875a;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #00875a;
+            padding-bottom: 5px;
+            font-size: 1.8rem;
+        }
+        .flex-content {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-content p {
+            flex: 1;
+            min-width: 300px;
+        }
+        .side-img {
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #00875a;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #113327;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #00875a;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #113327;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Futebol Feminino</h1>
-    <p>Estarei contando sobre a história do futebol feminino</p>
-    <p>Curiosidades:</p>
-    <h2>O futebol feminino enfrentou grandes obstaculos ao longo de sua historia, incluindo uma proibição legal no brasil entre 1941 e 1979, mas hoje se consolidou como um fenomeno global de massa, batendo recordes de audiencia e publico em estádios</h2>
-    <img src="https://f.i.uol.com.br/fotografia/2015/05/19/513123-970x600-1.jpeg" alt="">
+
+    <header>
+        <h1>Futebol Feminino</h1>
+        <p>História, talento e a evolução das mulheres nos gramados do mundo.</p>
+    </header>
+
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#icones">Ícones</a>
+        <a href="#torneios">Competições</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- SEÇÃO HISTÓRIA (Texto + Imagem Lateral) -->
+        <section id="historia">
+            <h2>História e Resistência</h2>
+            <div class="flex-content">
+                <p>O futebol feminino enfrentou décadas de proibição e preconceito em diversos países. No Brasil, o esporte foi proibido por lei entre 1941 e 1979, sob a justificativa de que a modalidade "não era adequada à natureza feminina". Apesar do enorme período sem apoio, as mulheres resistiram nos campos de várzea. Hoje, o cenário se transformou, quebrando recordes históricos de bilheteria e audiência global.</p>
+                <img class="side-img" src="https://unsplash.com" alt="Partida de futebol feminino">
+            </div>
+        </section>
+
+        <!-- SEÇÃO ÍCONES (Cards com Fotos Redondas) -->
+        <section id="icones">
+            <h2>Grandes Ícones do Esporte</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <!-- Foto ilustrativa representando Marta -->
+                    <img src="https://unsplash.com" alt="Jogadora Marta">
+                    <h3>Marta Silva</h3>
+                    <p>Eleita 6 vezes a melhor do mundo e maior artilheira da história das Copas.</p>
+                </div>
+                <div class="card">
+                    <!-- Foto ilustrativa representando Formiga -->
+                    <img src="https://unsplash.com" alt="Jogadora Formiga">
+                    <h3>Formiga</h3>
+                    <p>Lenda brasileira, única atleta no planeta a disputar 7 Copas do Mundo.</p>
+                </div>
+                <div class="card">
+                    <!-- Foto ilustrativa representando Alexia Putellas -->
+                    <img src="https://unsplash.com" alt="Jogadora Europeia">
+                    <h3>Alexia Putellas</h3>
+                    <p>Grande destaque do futebol espanhol e ganhadora de prêmios Ballon d'Or.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO COMPETIÇÕES (Tabela Organizada) -->
+        <section id="torneios">
+            <h2>Principais Torneios</h2>
+            <p>Conheça os campeonatos que movem torcidas ao redor do mundo:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competição</th>
+                        <th>Escopo</th>
+                        <th>Frequência</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Copa do Mundo da FIFA</strong></td>
+                        <td>Mundial (Seleções)</td>
+                        <td>A cada 4 anos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jogos Olímpicos</strong></td>
+                        <td>Mundial (Seleções)</td>
+                        <td>A cada 4 anos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UEFA Women's Champions League</strong></td>
+                        <td>Europa (Clubes)</td>
+                        <td>Anual</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copa Libertadores Feminina</strong></td>
+                        <td>América do Sul (Clubes)</td>
+                        <td>Anual</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Portal do Futebol Feminino. Desenvolvido para a Web.</p>
+    </footer>
+
 </body>
 </html>
